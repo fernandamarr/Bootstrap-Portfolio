@@ -1,0 +1,106 @@
+/* full body of portfolio */
+body {
+    margin: 0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background: url(../css/images/full-bloom.png);
+    background-size: cover;
+}
+
+/* navigation bar */
+.navbar-container {
+    margin: auto;
+    width: auto;
+    padding: 20px;
+}  
+
+.nav-link:hover {
+    opacity: 0.8;
+    color: red;
+    background-color: #4aaaa5;
+}
+
+li {
+    padding: 10px;
+}
+
+h1 {
+    padding: 30px;
+}
+
+/* content for all html files */
+.container {
+    margin-top: 30px;
+    margin-bottom: 200px;
+    padding-bottom: 60px;
+}
+
+/* header */
+.header {
+    padding-top: 25px;
+    color: #4aaaa5;
+}
+
+h1 h2 {
+    font-family: 'Georgia', Times, Times "New Roman", serif;
+}
+
+h2 {
+    padding-left: 20px;
+}
+
+/* paragraph */
+p {
+    color: #777777;
+}
+
+/* profile image on index.html */
+#img-thumbnail {
+    width: 150px;
+    padding: 5px 5px 5px;
+}
+
+/* portfolio placeholder images and caption */
+.row {
+    padding: 10px 30px 40px 10px;
+}
+
+col-md-4 {
+    position: relative;
+}
+
+.caption {
+    position: absolute;
+    text-align: center;
+    margin: 0;    
+    width: 92%;
+    top: 85%;
+    left: 50%;
+    padding: 15px;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+/* contact form buttons */
+form {
+    color: #777777;
+}
+
+.btn-default {
+    color: #ffffff;
+}
+
+/* sticky footer */
+.page-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #cccccc;
+    border-top: 8px solid #4aaaa5;
+}
+
+/* responsive design using viewport */
+@-ms-viewport {
+    width: device-width;
+  }
