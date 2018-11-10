@@ -1,37 +1,33 @@
-/* full body of portfolio */
+/* full body of html files */
 body {
-    margin: 0px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background: url(../css/images/full-bloom.png);
     background-size: cover;
 }
 
 /* navigation bar */
-.navbar-container {
-    margin: auto;
-    width: auto;
-    padding: 20px;
-}  
+li {
+    padding: 15px;
+}
+
+.nav-link {
+    color: #777777;
+}
 
 .nav-link:hover {
-    opacity: 0.8;
-    color: red;
+    color: #ffffff;
     background-color: #4aaaa5;
 }
 
-li {
-    padding: 10px;
+.navbar-brand {
+    padding: 100px;
+    height: 100%;
 }
 
-h1 {
-    padding: 30px;
-}
-
-/* content for all html files */
-.container {
-    margin-top: 30px;
-    margin-bottom: 200px;
-    padding-bottom: 60px;
+/* main content section */
+#main-section {
+    padding-top: 40px;
+    padding-bottom: 200px;
 }
 
 /* header */
@@ -42,10 +38,6 @@ h1 {
 
 h1 h2 {
     font-family: 'Georgia', Times, Times "New Roman", serif;
-}
-
-h2 {
-    padding-left: 20px;
 }
 
 /* paragraph */
@@ -64,21 +56,15 @@ p {
     padding: 10px 30px 40px 10px;
 }
 
-col-md-4 {
-    position: relative;
-}
-
-.caption {
+.badge-light {
     position: absolute;
     text-align: center;
     margin: 0;    
     width: 92%;
     top: 85%;
     left: 50%;
-    padding: 15px;
     transform: translate(-50%, -50%);
     opacity: 0.8;
-    color: #ffffff;
 }
 
 /* contact form buttons */
