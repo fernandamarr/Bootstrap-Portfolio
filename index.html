@@ -14,22 +14,22 @@
 <body>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-light bg-white">
+    <div class = "navbar navbar-inverse navbar-static-top bg-white">
         <div class="container">
             <span class="navbar-brand mb-0 h1 text-white" style="background-color: #4aaaa5">Fernanda Marroquin</span>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
-                </li>
-            </ul>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
         </div>
-    </nav>
+    </div>
 
     <!-- About Me section header, row one-->
     <div id="main-section">
@@ -44,16 +44,19 @@
 
             <!-- About Me section row two -->
             <hr>
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
-                    <img src="../Bootstrap-Portfolio/css/images/profile-image.jpg" alt="profile image" id="img-thumbnail">
+                <div class="row">
+                    <div class="imgwrapper">
+                        <div class="col-lg-4 col-md-2 col-xs-3 col-sm-3">
+                            <img src="../Bootstrap-Portfolio/css/images/profile-image.jpg" class="img-responsive" alt="profile image" id="img-thumbnail">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-xs-6 col-sm-6">
+                        <p>Fernanda is a queer migrant Latina activist, artist, and aspiring web developer born in Lima, Peru and currently living in Philadelphia. Over the past eight years, she has been a political organizer in the Philadelphia area and nationally for migrant rights and climate justice.<br><br>She organized with non-profit organizations, coalitions, and grassroots movements to stop deportations of community members, shut down family detention centers, and organized for the right to breathe clean air. She loves people power and believes human rights are legit.<br><br>Fernanda is dancer and co-founder of the Philadelphia-based dance company, Danza Melao. If she's not coding, dancing, or at the gym, she can be found hanging out with her two cats, Serena and Sofia. <br><br>She holds a B.A in Political Science from Eastern University and is currently a student at the University of Pennsylvania LPS Coding Bootcamp.</p>
+                    </div>
                 </div>
-                <div class="col-lg-10 col-md-10 col-xs-10 col-sm-10">
-                    <p>Fernanda is a queer migrant Latina activist, artist, and aspiring web developer born in Lima, Peru and currently living in Philadelphia. Over the past eight years, she has been a political organizer in the Philadelphia area and nationally for migrant rights and climate justice.<br><br>She organized with non-profit organizations, coalitions, and grassroots movements to stop deportations of community members, shut down family detention centers, and organized for the right to breathe clean air. She loves people power and believes human rights are legit.<br><br>Fernanda is dancer and co-founder of the Philadelphia-based dance company, Danza Melao. If she's not coding, dancing, or at the gym, she can be found hanging out with her two cats, Serena and Sofia. <br><br>She holds a B.A in Political Science from Eastern University and is currently a student at the University of Pennsylvania LPS Coding Bootcamp.</p>
-                </div>
-            </div>
-        </div>
+        </div>    
     </div>
+
 
 
     <!-- Sticky footer -->

@@ -6,12 +6,9 @@ body {
 }
 
 /* navigation bar */
-li {
-    padding: 15px;
-}
-
 .nav-link {
     color: #777777;
+    margin-top: 10px;
 }
 
 .nav-link:hover {
@@ -20,14 +17,13 @@ li {
 }
 
 .navbar-brand {
-    padding: 100px;
-    height: 100%;
+    padding: 40px;
 }
 
 /* main content section */
 #main-section {
     padding-top: 40px;
-    padding-bottom: 200px;
+    margin-bottom: 100px;
 }
 
 /* header */
@@ -48,23 +44,30 @@ p {
 /* profile image on index.html */
 #img-thumbnail {
     width: 150px;
-    padding: 5px 5px 5px;
+}
+
+img {
+    margin-left: 50px;
+    margin-right: 40px;
+    margin-top: 40px;
 }
 
 /* portfolio placeholder images and caption */
-.row {
-    padding: 10px 30px 40px 10px;
+.caption {
+    position: absolute;
+    top: 60%;
+    left: 15%;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    opacity: 0.8;
 }
 
-.badge-light {
-    position: absolute;
-    text-align: center;
-    margin: 0;    
-    width: 92%;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.8;
+.img-fluid {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* contact form buttons */
