@@ -1,38 +1,74 @@
-<!-- Homework Week 2, Part One - Bootstrap  -->
-
-<!doctype html>
+<!DOCTYPE html>
+<html>
 <html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>My Portfolio Using Bootstrap</title>
-        <link rel="stylesheet" type= "text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fernanda Marroquin</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+</head>
 
 <body>
 
-    <!-- Navigation bar -->
-    <div class = "navbar navbar-inverse navbar-static-top bg-white">
+    <!-- ==================================================================== -->
+    <!-- Home -->
+    <div id="home" class="name text-center">
         <div class="container">
-            <span class="navbar-brand mb-0 h1 text-white" style="background-color: #4aaaa5">Fernanda Marroquin</span>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+            <div class="row">
+                <div class="col-7">
+                    <div id="title">
+                        <h1 class="name-intro">Hi, I'm <span id="name">Fernanda</span></h1>
+                    </div>
+                    <div class="short-bio">
+                        <h6 class="intro py-5">I'm a Philadelphia based full-stack web developer with background in
+                            community organizing. <br><br>I make things that create positive change in the world.</h6>
+                        <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" class="fa fa-linkedin"></a>
+                        <a href="https://github.com/fernandamarr" target="_blank" class="fa fa-github"></a>
+                        <a href="https://twitter.com/fernandaa_marr" target="_blank" class="fa fa-twitter"></a>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img id="profile-picture" src="css/images/IMG_7899.JPG" alt="Fernanda Profile Picture" style="border-radius:150px;width:250px;height:250px;">
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- About Me section header, row one-->
-    <div id="main-section">
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2f0a35;">
+        <a class="navbar-brand text-white">Fernanda Marroquin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ==================================================================== -->
+    <!-- About -->
+    <div id="about">
         <div class="container" style="background-color: #ffffff">
             <div class="header">
                 <div class="row">
@@ -42,28 +78,128 @@
                 </div>
             </div>
 
-            <!-- About Me section row two -->
             <hr>
-                <div class="row">
-                    <div class="imgwrapper">
-                        <div class="col-lg-4 col-md-2 col-xs-3 col-sm-3">
-                            <img src="../Bootstrap-Portfolio/css/images/profile-image.jpg" class="img-responsive" alt="profile image" id="img-thumbnail">
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12 col-xs-6 col-sm-6">
-                        <p>Fernanda is a queer migrant Latina activist, artist, and aspiring web developer born in Lima, Peru and currently living in Philadelphia. Over the past eight years, she has been a political organizer in the Philadelphia area and nationally for migrant rights and climate justice.<br><br>She organized with non-profit organizations, coalitions, and grassroots movements to stop deportations of community members, shut down family detention centers, and organized for the right to breathe clean air. She loves people power and believes human rights are legit.<br><br>Fernanda is dancer and co-founder of the Philadelphia-based dance company, Danza Melao. If she's not coding, dancing, or at the gym, she can be found hanging out with her two cats, Serena and Sofia. <br><br>She holds a B.A in Political Science from Eastern University and is currently a student at the University of Pennsylvania LPS Coding Bootcamp.</p>
+            <div class="row">
+                <div class="imgwrapper">
+                    <div class="col-lg-4 col-md-2 col-xs-3 col-sm-3">
+                        <img src="../Bootstrap-Portfolio/css/images/profile-image.jpg" class="img-responsive" alt="profile image"
+                            id="img-thumbnail">
                     </div>
                 </div>
-        </div>    
+                <div class="col-lg-8 col-md-12 col-xs-6 col-sm-6">
+                    <p>Fernanda is a queer migrant Latina activist, artist, and aspiring web developer born in Lima,
+                        Peru and currently living in Philadelphia. Over the past eight years, she has been a political
+                        organizer in the Philadelphia area and nationally for migrant rights and climate justice.<br><br>She
+                        organized with non-profit organizations, coalitions, and grassroots movements to stop
+                        deportations of community members, shut down family detention centers, and organized for the
+                        right to breathe clean air. She loves people power and believes human rights are legit.<br><br>Fernanda
+                        is dancer and co-founder of the Philadelphia-based dance company, Danza Melao. If she's not
+                        coding, dancing, or at the gym, she can be found hanging out with her two cats, Serena and
+                        Sofia. <br><br>She holds a B.A in Political Science from Eastern University and is currently a
+                        student at the University of Pennsylvania LPS Coding Bootcamp.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
 
+    <!-- ==================================================================== -->
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container" style="background-color: #ffffff">
+            <div class="header">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+            </div>
 
-    <!-- Sticky footer -->
-    <footer class="page-footer" style="background-color: #666666">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">Copyright ©</div>
-    </footer>
+            <!-- row one -->
+            <hr>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                    <img src="css/images/placeimg_640_480_tech.jpg" class="img-fluid" alt="Responsive image">
+                    <div class="p-3 caption text-white text-center" style="background-color: #4aaaa5">
+                        <a href="https://fernandamarr.github.io/Word-Guess-Game/" style="color: #ffffff">Hangman</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-12 col-sm-12">
+                    <img src="css/images/placeimg_640_480_tech (1).jpg" class="img-fluid" alt="Responsive image">
+                    <div class="p-3 caption text-white text-center" style="background-color: #4aaaa5">
+                        <a href="https://fernandamarr.github.io/unit-4-game/" style="color: #ffffff">RPG Game</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row two -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                    <img src="css/images/placeimg_640_480_tech (2).jpg" class="img-fluid" alt="Responsive image">
+                    <div class="p-3 caption text-white text-center" style="background-color: #4aaaa5">
+                        <a href="https://fernandamarr.github.io/TriviaGame/" style="color: #ffffff">Trivia Game</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                    <img src="css/images/placeimg_640_480_tech (3).jpg" class="img-fluid" alt="Responsive image">
+                    <div class="p-3 caption text-white text-center" style="background-color: #4aaaa5">
+                        <a href="https://fernandamarr.github.io/GifTastic/" style="color: #ffffff">Rutgers Into Widget
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- row three -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                    <img src="css/images/placeimg_640_480_tech (4).jpg" class="img-fluid" alt="Responsive image">
+                    <div class="p-3 caption text-white text-center" style="background-color: #4aaaa5">
+                        <a href="https://fernandamarr.github.io/TrainScheduler/" style="color: #ffffff">Train Scheduler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================================================================== -->
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container" style="background-color: #ffffff">
+            <div class="header">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <hr>
+            <form>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" id="Name" placeholder="John Smith">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea class="form-control" id="Message" rows="7"></textarea>
+                </div>
+                <button type="submit" class="btn btn-default" style="background-color:#4aaaa5" style="border-color:#4aaaa5">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back To Top Arrow -->
+    <div class="top-arrow">
+        <a href="#home" id="to-top-arrow">back to top</a>
+    </div>
 
 </body>
 
