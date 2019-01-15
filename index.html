@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fernanda Marroquin</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,7 +17,8 @@
 
 <body>
 
-    <!-- ==================================================================== -->
+    <!--=========================================================-->
+
     <!-- Home -->
     <div id="home" class="name text-center">
         <div class="container">
@@ -27,90 +28,96 @@
                         <h1 class="name-intro">Hi, I'm <span id="name">Fernanda</span></h1>
                     </div>
                     <div class="short-bio">
-                        <h6 class="intro py-5">I'm a Philadelphia based full-stack web developer with background in
-                            community organizing. <br><br>I make things that create positive change in the world.</h6>
-                        <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" class="fa fa-linkedin"></a>
-                        <a href="https://github.com/fernandamarr" target="_blank" class="fa fa-github"></a>
-                        <a href="https://twitter.com/fernandaa_marr" target="_blank" class="fa fa-twitter"></a>
+                        <h4 class="intro py-4">I'm a Philadelphia based full-stack web developer, salsa dancer,
+                            andcommunity organizer who loves people power and cats.<br><br>I make things to create
+                            positive change in community.</h4>
+                        <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" class="fa fa-linkedin"
+                            title="Let's connect on LinkedIn"></a>
+                        <a href="https://github.com/fernandamarr" target="_blank" class="fa fa-github" title="Check out my GitHub"></a>
+                        <a href="https://twitter.com/fernandaa_marr" target="_blank" class="fa fa-twitter" title="Follow me on Twitter"></a>
                     </div>
                 </div>
                 <div class="col-2">
-                    <img id="profile-picture" src="css/images/IMG_7899.JPG" alt="Fernanda Profile Picture" style="border-radius:150px;width:250px;height:250px;">
+                    <img id="profile-picture" src="assets/images/IMG_7899.JPG" alt="Fernanda Profile Picture" style="border-radius:200px;width:250px;height:250px;">
                 </div>
             </div>
+
+            <!-- Down arrow -->
+            <div id="arrow-animate">
+                <a id="arrow" class="fa fa-arrow-down fa-2x" href="#about">
+                </a>
+            </div>
+
         </div>
     </div>
 
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2f0a35;">
-        <a class="navbar-brand text-white">Fernanda Marroquin</a>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(56, 61, 66)">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav py-3">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                    <a id="nav-link" href="#home">HOME<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#about">About</a>
+                    <a id="nav-link" href="#about">ABOUT</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <a id="nav-link" href="#portfolio">PORTFOLIO</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#contact">Contact</a>
+                    <a id="nav-link" href="#contact">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- ==================================================================== -->
+    <!--=========================================================-->
+
     <!-- About -->
     <div id="about">
-        <div class="container" style="background-color: #ffffff">
-            <div class="header">
-                <div class="row">
-                    <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
-                        <h2>About Me</h2>
-                    </div>
-                </div>
-            </div>
-
-            <hr>
+        <div class="page-title text-center">
+            <h1 class="title display-5 text-center">About</h1>
+        </div>
+        <div class="container">
             <div class="row">
-                <div class="imgwrapper">
-                    <div class="col-lg-4 col-md-2 col-xs-3 col-sm-3">
-                        <img src="../Bootstrap-Portfolio/css/images/profile-image.jpg" class="img-responsive" alt="profile image"
-                            id="img-thumbnail">
-                    </div>
+                <div class="col">
+                    <p class="one-liner text-center pt-2">Code with purpose.</p>
+                    <p class="short-bio pt-2">I'm a student at the Penn LPS Coding Bootcamp and former political
+                        organizer with over 8 years of experience in non-profit and grassroots community work. I'm
+                        also a salsa dancer. If I'm
+                        not coding, dancing, or at the gym, I can be found hanging out with my two cats, Serena and
+                        Sofia.</p>
                 </div>
-                <div class="col-lg-8 col-md-12 col-xs-6 col-sm-6">
-                    <p>Fernanda is a queer migrant Latina activist, artist, and aspiring web developer born in Lima,
-                        Peru and currently living in Philadelphia. Over the past eight years, she has been a political
-                        organizer in the Philadelphia area and nationally for migrant rights and climate justice.<br><br>She
-                        organized with non-profit organizations, coalitions, and grassroots movements to stop
-                        deportations of community members, shut down family detention centers, and organized for the
-                        right to breathe clean air. She loves people power and believes human rights are legit.<br><br>Fernanda
-                        is dancer and co-founder of the Philadelphia-based dance company, Danza Melao. If she's not
-                        coding, dancing, or at the gym, she can be found hanging out with her two cats, Serena and
-                        Sofia. <br><br>She holds a B.A in Political Science from Eastern University and is currently a
-                        student at the University of Pennsylvania LPS Coding Bootcamp.</p>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item active text-center" style="background-color: #4aaaa5; border-color:#4aaaa5;">
+                            <h5><i id="code-icon" class="fa fa-code"></i>SKILLS</h5>
+                        </li>
+                        <li id="list-skills" class="list-group-item">HTML</li>
+                        <li id="list-skills" class="list-group-item">CSS</li>
+                        <li id="list-skills" class="list-group-item">JavaScript</li>
+                        <li id="list-skills" class="list-group-item">jQuery</li>
+                    </ul>
                 </div>
             </div>
         </div>
+
+
     </div>
 
+    <!--=========================================================-->
 
-    <!-- ==================================================================== -->
     <!-- Portfolio -->
     <div id="portfolio">
         <div class="container" style="background-color: #ffffff">
             <div class="header">
                 <div class="row">
                     <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
-                        <h2>Portfolio</h2>
+                        <h1 class="title display-4">Portfolio</h1>
                     </div>
                 </div>
             </div>
@@ -164,7 +171,8 @@
     </div>
 
 
-    <!-- ==================================================================== -->
+    <!--=========================================================-->
+
     <!-- Contact -->
     <div id="contact">
         <div class="container" style="background-color: #ffffff">
@@ -197,9 +205,18 @@
     </div>
 
     <!-- Back To Top Arrow -->
-    <div class="top-arrow">
-        <a href="#home" id="to-top-arrow">back to top</a>
+    <div id="arrow-up-container">
+        <div id="arrow-animate">
+            <a id="arrow" class="fa fa-arrow-up fa-2x" href="#home">
+            </a>
+        </div>
     </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Script -->
+    <script src="assets/javascript/portfolio.js"></script>
 
 </body>
 

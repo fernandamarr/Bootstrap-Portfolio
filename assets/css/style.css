@@ -1,0 +1,175 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation bar */
+.navbar {
+    top: 0;
+    transition: top 0.3s;
+    border-bottom: 3px solid #FA8072	;
+}
+
+#nav-link {
+    margin: 8px 5px 8px 30px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+#nav-link:hover {
+    color: #FA8072;
+}
+
+/* Home page */
+#home {
+    color: #ffffff;
+    padding-bottom: 200px;
+    background-color: #4aaaa5;
+}
+
+#title {
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+#name {
+    font-size: 88px;
+    color: #ee0f99;
+    font-family: 'Cookie', cursive;
+}
+
+.name-intro {
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+}
+
+.short-bio {
+    padding-bottom: 100px;
+}
+
+.intro {
+    font-size: 22px;
+}
+
+/* Profile picture */
+#profile-picture {
+    margin-top: 120px;
+}
+
+/* Animate profile picture */
+@keyframes animate {
+    from {margin-top: 120px;}
+    to {margin-top: 100px;}
+}
+
+#profile-picture:hover {
+    opacity: 0.6;
+    animation-name: animate;
+    animation-duration: 5s;
+	-webkit-box-shadow: 0 8px 6px -1px #000000; /* box shadow effect */
+	-moz-box-shadow: 0 8px 6px -1px #000000;
+	box-shadow: 0 8px 6px -1px #000000;
+}
+
+/* Social media buttons */
+.fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 50%;
+    background: #777777;
+  }
+
+.fa-github, .fa-linkedin, .fa-twitter {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: #ee0f99;
+    border: 2px solid #ee0f99;
+    background-color: #ffffff;
+}
+
+/* Up and down arrows */
+.fa-arrow-down, .fa-arrow-up {
+    color: #ffffff;
+}
+
+#arrow-animate {
+    margin-top: -40px;
+}
+
+#arrow-animate:hover {
+    -moz-animation: bounce 2s;
+    -webkit-animation: bounce 2s;
+    animation: bounce 2s;
+}
+
+#arrow-up-container {
+    margin: 60px;
+    text-align: center;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+
+/* About page */
+#about {
+    margin-top: 40px;
+    padding-bottom: 500px;
+}
+
+.title {
+    margin-bottom: 90px;
+}
+
+#list-skills:hover {
+    color: #000000;
+    background-color: #a6d8d5;
+    opacity: 0.7;
+}
+
+.one-liner {
+    font-size: 50px;
+    font-family: 'Cookie', cursive;
+}
+
+.short-bio {
+    font-size: 18px;
+}
+
+#code-icon {
+    background-color: #ee0f99;
+}
+
+#code-icon:hover {
+    color: #ffffff;
+    background-color: #FA8072;
+    border: none;
+}
+
+/* contact form buttons */
+form {
+    color: #777777;
+}
+
+.btn-default {
+    color: #ffffff;
+}
+
+/* responsive design using viewport */
+@-ms-viewport {
+    width: device-width;
+  }
