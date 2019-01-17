@@ -19,21 +19,19 @@ $(document).ready(function () {
         }
     });
 
-    $('a[href^="#"]').on('click', function (event) {
-        $(".title").show();
-        var target = $(this.getAttribute('href'));
-        if (target.length) {
-            event.preventDefault();
-            $(".title").animate({ fontSize: '4em' }, "slow");
-        }
-    });
+    // $('a[href^="#"]').on('click', function (event) {
+    //     $(".title").show();
+    //     var target = $(this.getAttribute('href'));
+    //     if (target.length) {
+    //         event.preventDefault();
+    //         $(".title").animate({ fontSize: '4em' }, "slow");
+    //     }
+    // });
 
     // Animate code icon
-    
-
-    $("#code-icon").hover(function() {
-        $(this).addClass('beat');
-        animateCode();
-    })
+    // $("#code-icon").hover(function() {
+    //     $(this).addClass('beat');
+    //     animateCode();
+    // })
 
 });
