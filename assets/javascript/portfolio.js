@@ -1,14 +1,6 @@
 $(document).ready(function () {
 
-    // Scroll to top of page on window refresh
-    // window.onbeforeunload = function () {
-    //     window.scrollTo(0, 0);
-    // }
-
-    // Hide page titles
-    // $(".title").hide();
-
-    // Scroll anchors over course of 1 second 
+    // Smoothly scroll anchors over course of 1 second 
     $('a[href^="#"]').on('click', function (event) {
         var target = $(this.getAttribute('href'));
         if (target.length) {
@@ -19,19 +11,18 @@ $(document).ready(function () {
         }
     });
 
-    // $('a[href^="#"]').on('click', function (event) {
-    //     $(".title").show();
-    //     var target = $(this.getAttribute('href'));
-    //     if (target.length) {
-    //         event.preventDefault();
-    //         $(".title").animate({ fontSize: '4em' }, "slow");
-    //     }
-    // });
+    function triangleBgd() {
+        $("#contact .contact-wrapper").css({
+            "border-left": $("#contact").width() + "px solid #fff",
+            "border-bottom": "300px solid transparent"
+        })
+    }
+    triangleBgd();
 
-    // Animate code icon
-    // $("#code-icon").hover(function() {
-    //     $(this).addClass('beat');
-    //     animateCode();
-    // })
+    $(window).on('resize', triangle);
+
+
+
+
 
 });

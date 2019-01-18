@@ -3,60 +3,17 @@ body {
 }
 
 /* Navigation bar */
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+.navbar {
+    background-color: #3b3838;
 }
 
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh; /*viewport height */
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-
-/* .nav {
-    height: 100%;
-    width: 120px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    padding-top: 20px;
-    background-color: #383d42;
-}
-
-.nav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 20px;
+#link {
     color: #ffffff;
-    display: block;
 }
 
-.nav a:hover {
-    color: #3AAFA9;
+#link:hover {
+    color: #6cf3ec;
 }
-.navbar-ul {
-    position: sticky;
-    top: 0;
-}
-
-#nav-link {
-    margin: 8px 5px 8px 30px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-#nav-link:hover {
-    color: #FA8072;
-} */
 
 /* Home page */
 #home {
@@ -66,7 +23,6 @@ body {
     animation-iteration-count: infinite;
     animation-duration: infinite;
     animation: pulse 8s infinite alternate; /* animation-name followed by duration in seconds*/
-       /* you could also use milliseconds (ms) or something like 2.5s */
     -webkit-animation: colorchange 50s; /* Chrome and Safari */
   }
 
@@ -107,7 +63,7 @@ body {
   }
 
 #title {
-    padding-top: 110px;
+    padding-top: 130px;
     padding-bottom: 15px;
 }
 
@@ -129,7 +85,7 @@ body {
 
 /* Profile picture */
 #profile-picture {
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .button-container {
@@ -247,16 +203,6 @@ body {
     margin-bottom: 60px;
 }
 
-#list-skills {
-    background-color: #9fd1cf;
-}
-
-#list-skills:hover {
-    color: #000000;
-    background-color: #3AAFA9;
-    opacity: 0.8;
-}
-
 .one-liner {
     color: #ffffff;
     font-size: 44px;
@@ -268,28 +214,30 @@ body {
     font-size: 18px;
 }
 
-#code-icon {
-    background-color: #FA8072;
-}
-
-#code-icon:hover {
-    border: none;
-    color: #ffffff;
-}
-
 /* Portfolio */
 #portfolio {
     margin-top: 60px;
     margin-bottom: 300px;
 }
 
-/* contact form buttons */
+/* Contact */
 .contact-wrapper {
+    position: absolute;
+        width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    bottom: -100px;;
     background-color: #000000;
-    padding: 100px;
+    /* padding: 100px; */
 }
 
+#contact {
 
+    position: relative;
+    min-height: 500px;
+    background: black;
+}
 
 /* responsive design using viewport */
 @-ms-viewport {

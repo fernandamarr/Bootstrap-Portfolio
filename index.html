@@ -4,26 +4,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fernanda Marroquin</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="css/uikit.min.css">
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
-
+    
     <!--=========================================================-->
-
     <!-- Home -->
     <div id="home">
+
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark navbar fixed-top">
+            <a class="navbar-brand" href="#home">Fernanda Marroquin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a id="link" class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link" class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link" class="nav-link" href="#portfolio">My Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link" class="nav-link" href="#blog">Words</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="link" class="nav-link" href="#contact">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="container">
             <div class="row">
                 <div class="col-7">
@@ -35,11 +59,9 @@
                             beautiful <br>and meaningful things.</h4>
 
                         <div class="button-container">
-                        <a id="home-button" href="#about"><span>TELL ME MORE</a>
+                            <a id="home-button" href="#about"><span>TELL ME MORE</a>
                         </div>
-
                     </div>
-
                 </div>
                 <div id="picture-bgd">
                     <div class="col-2">
@@ -50,43 +72,9 @@
         </div>
     </div>
 
-    <!-- Navigation bar -->
-    <div class="wrapper">
-        <nav id="sidebar">
-            <li>
-                <a id="nav-link" href="#home">HOME</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#about">ABOUT</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#portfolio">MY WORK</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#blog">BLOG</a>
-            </li>
-            <li>
-                <a id="nav-link" href="#contact">CONTACT</a>
-            </li>
-        </nav>
-    </div>
-
     <!--=========================================================-->
     <!-- About -->
     <div id="about">
-
-        <!-- sidebar toggle button -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
-                </button>
-
-            </div>
-        </nav>
-
         <div class="page-title text-center">
             <h1 class="title display-5 text-center text-white">About</h1>
         </div>
@@ -104,32 +92,33 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <!--=========================================================-->
-
     <!-- Portfolio -->
     <div id="portfolio">
 
     </div>
 
+    <!--=========================================================-->
+    <!-- Blog -->
+    <div id="blog">
+
+    </div>
+
 
 
     <!--=========================================================-->
-
-
     <!-- Contact -->
-    <div class="contact-wrapper text-center">
-        <h1 class="title text-white text-center">Let's Connect</h1>
+    <div id="contact">
+        <div class="contact-wrapper">
+            <h1 class="title text-white">Let's Connect</h1>
 
-        <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" id="social-media" class="fa fa-linkedin"
-            title="Let's connect on LinkedIn"></a>
-        <a href="https://github.com/fernandamarr" target="_blank" id="social-media" class="fa fa-github" title="Check out my GitHub"></a>
-        <a href="https://twitter.com/fernandaa_marr" target="_blank" id="social-media" class="fa fa-twitter" title="Follow me on Twitter"></a>
+            <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" id="social-media" class="fa fa-linkedin"
+                title="Let's connect on LinkedIn"></a>
+            <a href="https://github.com/fernandamarr" target="_blank" id="social-media" class="fa fa-github" title="Check out my GitHub"></a>
+            <a href="https://twitter.com/fernandaa_marr" target="_blank" id="social-media" class="fa fa-twitter" title="Follow me on Twitter"></a>
 
-        <div id="contact">
             <div id="arrow-up-container">
                 <div id="arrow-animate">
                     <a id="arrow" class="fa fa-arrow-up fa-2x" href="#home">
@@ -137,12 +126,19 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <!-- Script -->
-        <script src="assets/javascript/portfolio.js"></script>
+    <!-- Popper.js, Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- Script -->
+    <script src="assets/javascript/portfolio.js"></script>
 
 </body>
 
