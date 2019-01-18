@@ -4,7 +4,8 @@ body {
 
 /* Navigation bar */
 .navbar {
-    background-color: #3b3838;
+    overflow: hidden;
+    background-color: #000000;
 }
 
 #link {
@@ -12,54 +13,14 @@ body {
 }
 
 #link:hover {
-    color: #6cf3ec;
+    color: #ff2c2c;
 }
 
 /* Home page */
 #home {
-    color: #000000;
+    color: #ffffff;
     padding-bottom: 200px;
-    animation-name: color;
-    animation-iteration-count: infinite;
-    animation-duration: infinite;
-    animation: pulse 8s infinite alternate; /* animation-name followed by duration in seconds*/
-    -webkit-animation: colorchange 50s; /* Chrome and Safari */
-  }
-
-  @keyframes colorchange
-  {
-    0%   {background: #eed4e8;}
-    25%  {background: #f5d8ad;}
-    50%  {background: #aaf0cf;}
-    75%  {background: #b1b7f1;}
-    100% {background: #f1b9da;}
-  }
-
-  @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
-  {
-    0%   {background: #eed4e8;}
-    25%  {background: #f5d8ad;}
-    50%  {background: #aaf0cf;}
-    75%  {background: #b1b7f1;}
-    100% {background: #f1b9da;}
-  }
-
-  @keyframes pulse {
-      0% {
-          background-color: #eed4e8;
-      }
-      25% {
-          background-color: #f5d8ad;
-      }
-      50% {
-          background-color: #aaf0cf;
-      }
-      75% {
-          background-color: #b1b7f1;
-      }
-      100% {
-          background-color: #f1b9da;
-      }
+    background-color: #000000;
   }
 
 #title {
@@ -68,9 +29,9 @@ body {
 }
 
 #name {
-    font-size: 75px;
-    color: #4e0072;
+    font-size: 80px;
     font-family: 'Cookie', cursive;
+    color: #ff2c2c;
 }
 
 .name-intro {
@@ -79,8 +40,8 @@ body {
 }
 
 .intro {
-    color: #000000;
     font-size: 30px;
+    color: #ffffff;
 }
 
 /* Profile picture */
@@ -97,18 +58,18 @@ body {
     padding-top: 10px;
     font-size: 14px;
     text-align: center;
-    border: none;
     padding: 15px;
     transition: all 0.2s;
     cursor: pointer;
     color: #ffffff;
-    background-color: #FA8072;
+    border: 2px solid #ff2c2c;
+    background-color: #000000;
 }
 
 #home-button:hover {
-    border: 2px solid #3AAFA9;
-    color: #ffffff;
-    background-color: #3AAFA9;
+    border: 2px solid #000000;
+    color: #000000;
+    background-color: #ff2c2c;
 } 
 
 #home-button span {
@@ -124,7 +85,7 @@ body {
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
 }
 
 #home-button:hover span {
@@ -194,24 +155,23 @@ body {
 
 /* About page */
 #about {
-    margin-top: 20px;
     padding-bottom: 300px;
     background-color: #FA8072;
 }
 
 .title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .one-liner {
-    color: #ffffff;
     font-size: 44px;
     font-family: 'Cookie', cursive;
+    color: #ffffff;
 }
 
 .short-bio {
-    color: #ffffff;
     font-size: 18px;
+    color: #ffffff;
 }
 
 /* Portfolio */
