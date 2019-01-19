@@ -10,19 +10,4 @@ $(document).ready(function () {
             }, 700);
         }
     });
-
-    function triangleBgd() {
-        $("#contact .contact-wrapper").css({
-            "border-left": $("#contact").width() + "px solid #fff",
-            "border-bottom": "300px solid transparent"
-        })
-    }
-    triangleBgd();
-
-    $(window).on('resize', triangle);
-
-
-
-
-
 });
