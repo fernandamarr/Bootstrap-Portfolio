@@ -20,13 +20,12 @@
     <!--=========================================================-->
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-dark navbar fixed-top">
-        <a class="navbar-brand pr-2" href="#home"><img id="logo" src="assets/images/logo.png" alt="logo" style="width: 50px;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <a id="link" class="nav-link" href="#home">Home</a>
                 </li>
@@ -44,6 +43,7 @@
                 </li>
             </ul>
         </div>
+        <a id="brand" class="navbar-brand pr-2" href="#home">fernanda marroquin</a>
     </nav>
 
     <!--=========================================================-->
@@ -51,23 +51,23 @@
     <div id="home">
         <div class="container">
             <div class="row">
-                <div class="col-7">
+                <div id="content-container" class="col-12">
                     <div id="title">
                         <h1 class="name-intro text-center">Hi, I'm <span id="name">Fernanda</span></h1>
                     </div>
                     <div class="short-bio text-center">
-                        <h4 class="intro py-2 text-center">I'm a full-stack web developer<br> passionate about building
+                        <h4 class="intro py-2 text-center">Full-stack web developer<br> passionate about building
                             beautiful <br>and meaningful things.</h4>
                         <div class="button-container">
-                            <a id="home-button" href="#about"><span>TELL ME MORE</a>
+                            <a id="home-button" href="#about"><span>SEE MY WORK</a>
                         </div>
                     </div>
                 </div>
-                <div id="picture-bgd">
+                <!-- <div id="picture-bgd">
                     <div class="col-2">
                         <img id="profile-picture" src="assets/images/IMG_7464.JPG" alt="Fernanda Profile Picture" style="border-radius: 20px; width: 260px;">
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -80,7 +80,7 @@
         </div>
         <div class="container">
             <div class="row">
-                    <i id="code-icon" class="fa fa-code"></i>
+                    <i id="code-icon" class="fa fa-code">Skills</i>
             </div>
             <div class="row">
                 <div class="col-5">
@@ -105,7 +105,7 @@
     <div id="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div id="portfolio-image" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/movie-wishlist.png" alt="movie wishlist">
                         <div class="overlay">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div id="portfolio-image" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/train-scheduler.png" alt="train scheduler">
                         <div class="overlay">
@@ -125,9 +125,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+                <div id="portfolio-image" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/giftastic.png" alt="giftastic">
                         <div class="overlay">
@@ -137,7 +135,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
+            </div>
+            <div class="row">
+                <div id="portfolio-image" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/trivia-game.png" alt="harry potter trivia">
                         <div class="overlay">
@@ -147,10 +147,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-                    <div class="hovereffect">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div id="portfolio-image" class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/crystalcollector.png" alt="crystals collector">
                         <div class="overlay">
                             <h2>Crystals Collector</h2>
@@ -159,8 +157,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-                    <div class="hovereffect">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div id="portfolio-image" class="hovereffect">
                         <img id="portfolio-img" class="img-thumbnail" src="assets/images/hangman.png" alt="hangman game">
                         <div class="overlay">
                             <h2>Hangman</h2>
@@ -186,7 +184,11 @@
     <!-- Contact -->
     <div id="contact">
         <div class="contact-wrapper">
-            <h1 class="title text-white">Let's Connect</h1>
+            <h1 class="title text-white">Let's Connect!</h1>  
+            <!-- <div id="envelope-wrapper">
+                <i id="envelope" class="fa-fw fa fa-2x fa-animation fa-envelope fa-animation-envelope" aria-hidden="true"></i>
+            </div>         -->
+            <a href="mailto:fernanda.marroquin07@gmail.com" id="social-media" class="fa fa-envelope" title="Send me an email"></a>
             <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" id="social-media" class="fa fa-linkedin"
                 title="Let's connect on LinkedIn"></a>
             <a href="https://github.com/fernandamarr" target="_blank" id="social-media" class="fa fa-github" title="Check out my GitHub"></a>
