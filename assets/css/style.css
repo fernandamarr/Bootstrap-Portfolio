@@ -177,95 +177,66 @@ body {
     margin-right: -10px;
 }
 
-/* hover effect on portfolio images */
-.hovereffect {
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* 3D effect */
+  }
+  
+  /* Position the front and back side */
+.flip-card-inner {
+    position: relative;
     width: 100%;
     height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
     text-align: center;
-    cursor: default;
-    background: #14A6C7;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
   }
   
-  .hovereffect .overlay {
+/* Horizontal flip on hover */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
     width: 100%;
     height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    padding: 50px 20px;
-  }
-  
-  .hovereffect img {
-    display: block;
-    position: relative;
-    max-width: none;
-    width: calc(100% + 20px);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-10px,0,0);
-    transform: translate3d(-10px,0,0);
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   
-  .hovereffect:hover img {
-    opacity: 0.2;
-    filter: alpha(opacity=40);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+  /* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
   }
   
-  .hovereffect h2 {
-    text-transform: uppercase;
+  /* Style the back side */
+.flip-card-back {
+    background-color: #14A6C7;
     color: #ffffff;
-    text-align: center;
-    position: relative;
-    font-size: 20px;
-    overflow: hidden;
-    padding: 0.5em 0;
-    background-color: transparent;
-  }
-  
-  .hovereffect h2:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #fff;
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(-100%,0,0);
-    transform: translate3d(-100%,0,0);
-  }
-  
-  .hovereffect:hover h2:after {
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  
-  .hovereffect a, .hovereffect p {
-    color: #ffffff;
-    opacity: 0;
-    filter: alpha(opacity=0);
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(100%,0,0);
-    transform: translate3d(100%,0,0);
-  }
-  
-  .hovereffect:hover a, .hovereffect:hover p {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
+    transform: rotateY(180deg);
   }
 
+#portfolio-title {
+    margin-top: 30px;
+    font-size: 2.1rem;
+}
+
+#info {
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#info:hover {
+    color: #fa0060;
+}
+  
 /* Contact */
 #about {
     padding-top: 80px;
