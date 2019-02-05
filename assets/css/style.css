@@ -28,7 +28,7 @@ body {
     background: linear-gradient(
         rgba(0, 0, 0, 0.7),
         rgba(0, 0, 0, 0.7)
-      ),url(../images/home-bgd.jpg);
+      ),url(../images/home-bgd-compressed.jpg);
     background-size: cover;
     height: 100vh;
   }
@@ -140,26 +140,6 @@ body {
     padding-top: 100px;
     margin-left: 80px;
 }
-
-/* .card {
-    margin-bottom: 40px;
-}
-
-#icons {
-    color: #ffffff;
-    font-size: 40px;
-    padding: 20px;
-    border: 1px solid #000000;
-}
-
-#card-one {
-    padding-bottom: 50px;
-    background-color: #4673AD;
-}
-
-.card-title, .card-text {
-    color: #ffffff;
-} */
 
 /* Portfolio */
 #portfolio {
