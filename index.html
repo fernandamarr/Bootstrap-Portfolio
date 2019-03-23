@@ -6,14 +6,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fernanda Marroquin</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -72,36 +74,64 @@
     <!-- About -->
     <div id="about">
         <div class="page-title text-center">
-            <h1 class="title display-5 text-center text-white">About</h1>
+            <h1 class="title display-5 text-center">About</h1>
+        </div>
+        <div class="card-deck">
+            <div class="card" data-aos="slide-up">
+                <i class="fas fa-laptop-code text-center"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Skills</h5>
+                    <ul class="card-text" id="skills-list">
+                        <li class="list"> HTML </li>
+                        <li class="list"> CSS/Bootstrap </li>
+                        <li class="list"> JavaScript </li>
+                        <li class="list"> jQuery </li>
+                        <li class="list"> Handlebars </li>
+                        <li class="list"> AJAX </li><br>
+                        <li class="list"> MySQL </li>
+                        <li class="list"> Node.js </li>
+                        <li class="list"> Express </li><br>
+                        <li class="list"> MongoDB </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card" data-aos="slide-up" data-aos-delay="350">
+                <i class="fas fa-heart text-center"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Passion</h5>
+                    <p class="card-text">Prioritize creating applications that will serve people in positive and uplifting ways.
+                    </p>
+                </div>
+            </div>
+            <div class="card" data-aos="slide-up" data-aos-delay="550">
+                <i class="fas fa-users-cog text-center"></i>
+
+                <div class="card-body">
+                    <h5 class="card-title">Experience</h5>
+                    <p class="card-text">Work effectively in diverse teams and individually, experienced in creating
+                        solution-driven, responsive and dynamic web applications.</p>
+                </div>
+            </div>
         </div>
         <div class="container">
-            <!-- <div class="row">
-                <div id="card-one" class="card" style="width: 18rem;">
-                    <i id="icons" class="fas fa-code text-center" src=".../100px180/"></i>
-                    <div class="card-body">
-                        <h5 class="card-title text-center">What I do:</h5>
-                        <p class="card-text"><b>Front-end:</b><br><b>Back-end:</b></p>
-                    </div>
-                </div>
-                <div class="col">
-                </div>
-            </div> -->
             <div class="row">
                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-                    <p class="one-liner text-center">Code with purpose.</p>
-                    <p class="short-bio pt-2">After graduating from Eastern University with a BA in Political Science,
-                        I spent eight years as a community organizer for non-profit and grassroots organizations in
-                        Philadelphia. I began my self-taught coding journey in 2018 through free resources online.
-                        Since I love working with people and
-                        leveling up, I applied to the Penn LPS Coding Bootcamp.<br><br>I was born in Lima, Peru and
+                    <p class="short-bio pt-2" data-aos="fade-right">I'm a Full Stack Web Developer from Philadelphia,
+                        PA. I attend
+                        the Penn LPS Coding Bootcamp and hold a BA in Political Science from Eastern University. I have
+                        an extensive background as a community organizer for non-profit and grassroots organizations in
+                        Philadelphia and nationally.
+                        <br><br>I was born in Lima, Peru and
                         identify as a queer migrant woman of Color. I'm also a salsa dancer. I'm passionate about
-                        collective growth, a lot of laughter, and creating exciting and transformative things together.
+                        collective growth and creating exciting and transformative things together.
                         If I'm not coding,
                         dancing, or lifting heavy things at the gym, I can be found hanging out with my two cats,
                         Serena and Sofia.
+                        <!-- <a href="" download>Download Resume</a> -->
                 </div>
                 <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12">
-                    <img id="profile-picture" class="img-responsive" src="assets/images/profile-pic.JPG" alt="profile picture">
+                    <img id="profile-picture" class="img-responsive" src="assets/images/profile-pic.JPG"
+                        alt="profile picture" data-aos="fade-left">
                 </div>
             </div>
         </div>
@@ -111,165 +141,185 @@
     <!-- Portfolio -->
     <div id="portfolio">
         <div class="container">
-            <div class="row">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/pacman-img.jpg" class="img-fluid" alt="Responsive image" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">iGame</h1>
-                            <a id="info" href="https://github.com/MonkeyInitiatives/iGame" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
+            <div class="grid">
+                <div class="row">
+                    <figure class="effect">
+                        <img src="assets/images/pacman-img.jpg" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>iGame</h2>
+                            <p>Full-Stack app for gamers.<br><br> Built with
+                                JavaScript, jQuery, Express, AJAX, Handlebars, Socket.io, Passport.js.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://github.com/MonkeyInitiatives/iGame" target="_blank">View on
+                                    Github | </a>
+                                <a id="view" href="https://igame-30391.herokuapp.com/" target="_blank"> View on
+                                    Heroku</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect">
+                        <img src="assets/images/burger-img.jpg" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Eat-Da-Burger</h2>
+                            <p>Restaurant app that lets users input the names of burgers they'd like to
+                                eat.<br><br>Built
+                                with MySQL, Node.js, Express, Handlebars</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://github.com/fernandamarr/Eat-Da-Burger" target="_blank">View
+                                    on
+                                    Github | </a>
+                                <a id="view" href="https://fernanda-burger-app.herokuapp.com/" target="_blank"> View on
+                                    Heroku</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect">
+                        <img src="assets/images/friend-finder.png" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Friend Finder</h2>
+                            <p>Full-stack compatibility-based app that matches users through survey results.<br><br>
+                                Built with JavaScript, jQuery, AJAX, Node.js, Express, NPM Modules.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://github.com/fernandamarr/Friend-Finder" target="_blank">View
+                                    on
+                                    Github | </a>
+                                <a id="view" href="https://fernanda-friend-finder.herokuapp.com/" target="_blank"> View
+                                    on
+                                    Heroku</a>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/burger-img.png" class="img-fluid" alt="Responsive image" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Eat-Da-Burger!</h1>
-                            <a id="info" href="https://github.com/fernandamarr/burger" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
+                <div class="row">
+                        <figure class="effect">
+                                <img src="assets/images/movie-wishlist.jpg" class="img-fluid" alt="Responsive image">
+                                <figcaption>
+                                    <h2>Movie Wishlist</h2>
+                                    <p>Search for movies and add your favorites to a Wish List. <br><br>Built with JavaScript, AJAX,
+                                        Firebase,
+                                        API, SweetAlert.</p>
+                                    <p class="icon-links">
+                                        <a id="view" href="https://fernandamarr.github.io/Project-1/" target="_blank">View
+                                            on
+                                            Github | </a>
+                                            <a id="view" href="https://movie-wishlist-project.herokuapp.com/index.html" target="_blank"> View on Heroku</a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect">
+                                    <img src="assets/images/train-scheduler.jpg" class="img-fluid" alt="Responsive image">
+                                    <figcaption>
+                                        <h2>Train Scheduler</h2>
+                                        <p>Train schedule app with arrival and
+                                            departure data.<br><br> Built with JavaScript, jQuery, Moment.js, Firebase.</p>
+                                        <p class="icon-links">
+                                            <a id="view" href="https://fernandamarr.github.io/TrainScheduler/" target="_blank">View
+                                                on
+                                                Github | </a>
+                                                <a id="view" href="https://fernanda-train-app.herokuapp.com/index.html" target="_blank"> View on Heroku</a>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                    <figure class="effect">
+                        <img src="assets/images/liri-app.gif" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>LIRI Node App</h2>
+                            <p>A command line app to search Spotify for songs, Bands in Town for concerts, and OMDB for
+                                movies.<br><br> Built with JavaScript and Node.js.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://github.com/fernandamarr/Liri-Node-App" target="_blank">View
+                                    on Github</a>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/friend-finder-home.png" class="img-fluid" alt="Responsive image"
-                                style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Friend Finder</h1>
-                            <a id="info" href="https://github.com/fernandamarr/friend-finder" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
+                <div class="row">
+                        <figure class="effect">
+                                <img src="assets/images/bamazon.jpg" class="img-fluid" alt="Responsive image">
+                                <figcaption>
+                                    <h2>Bamazon</h2>
+                                    <p>Amazon-like storefront for customer order view and a manager
+                                        action view.<br><br> Built with Node.js, MySQL, and JavaScript.</p>
+                                    <p class="icon-links">
+                                        <a id="view" href="ttps://github.com/fernandamarr/MySQL-Node-Bamazon"
+                                            target="_blank">View
+                                            on
+                                            Github</a>
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <figure class="effect">
+                                    <img src="assets/images/guess-pokemon.jpg" class="img-fluid" alt="Responsive image">
+                                    <figcaption>
+                                        <h2>Pokemon Word Guess</h2>
+                                        <p>Command-line game to guess a pokemon.<br><br> Built with
+                                            JavaScript and Node.js.</p>
+                                        <p class="icon-links">
+                                            <a id="view" href="https://github.com/fernandamarr/Constructor-Word-Guess"
+                                                target="_blank">View
+                                                on
+                                                Github</a>
+                                        </p>
+                                    </figcaption>
+                                </figure>
+                    <figure class="effect">
+                        <img src="assets/images/giftastic.gif" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Giftastic!</h2>
+                            <p>A dynamic web page that populates with cartoon character gifs.<br><br>Built with HTML,
+                                CSS/Bootstrap, JavaScript, jQuery, AJAX, Giphy API.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://fernandamarr.github.io/GifTastic/" target="_blank">View
+                                    on
+                                    Github</a>
+                            </p>
+                        </figcaption>
+                    </figure>
                 </div>
-
+                <div class="row">
+                    <figure class="effect">
+                        <img src="assets/images/trivia.jpg" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Harry Potter Trivia</h2>
+                            <p>Trivia game with a running timer.<br><br> Built
+                                with
+                                Javascript, HTML, CSS.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://fernandamarr.github.io/TriviaGame/" target="_blank">View
+                                    on
+                                    Github</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect">
+                        <img src="assets/images/crystals-collector.jpg" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Crystals Collector</h2>
+                            <p>Click on the crystals to match the random number.<br><br>Built with HTML, CSS,
+                                JavaScript.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://fernandamarr.github.io/unit-4-game/" target="_blank">View
+                                    on
+                                    Github</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect">
+                        <img src="assets/images/bobs_burgers.jpg" class="img-fluid" alt="Responsive image">
+                        <figcaption>
+                            <h2>Bob's Burgers Hangman</h2>
+                            <p>Guess the chatacter correctly and win
+                                or run out of guesses left and lose.<br><br> Built with HTML, CSS, JavaScript.</p>
+                            <p class="icon-links">
+                                <a id="view" href="https://fernandamarr.github.io/Word-Guess-Game/" target="_blank">View
+                                    on
+                                    Github</a>
+                            </p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="row">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/customer-view.gif" alt="Responsive image" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Bamazon</h1>
-                            <a id="info" href="https://github.com/fernandamarr/MySQL-Node-Bamazon" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/constructor-word-guess.png" alt="Responsive image" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Constructor Word<br>Guess - Pokemon!</h1>
-                            <a id="info" href="https://github.com/fernandamarr/Constructor-Word-Guess" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/liri-example.png" alt="Liri Node App" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">LIRI Node App</h1>
-                            <a id="info" href="https://github.com/fernandamarr/Liri-Node-App" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/movie-wishlist.png" alt="Movie Wishlist" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Movie Wishlist</h1>
-                            <a id="info" href="https://fernandamarr.github.io/Project-1/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/train-scheduler.png" alt="Train Scheduler" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Train Scheduler</h1>
-                            <a id="info" href="https://fernandamarr.github.io/TrainScheduler/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/giftastic.png" alt="Giftastic" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Giftastic!</h1>
-                            <a id="info" href="https://fernandamarr.github.io/GifTastic/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/trivia-game.png" alt="Trivia Game" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Harry Potter Trivia</h1>
-                            <a id="info" href="https://fernandamarr.github.io/TriviaGame/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/crystalcollector.png" alt="Crystals Collector" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Crystals Collector</h1>
-                            <a id="info" href="https://fernandamarr.github.io/unit-4-game/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="assets/images/hangman.png" alt="Hangman" style="width:100%;height:100%;">
-                        </div>
-                        <div class="flip-card-back">
-                            <h1 id="portfolio-title">Hangman</h1>
-                            <a id="info" href="https://fernandamarr.github.io/Word-Guess-Game/" target="_blank">View
-                                Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
     </div>
 
 
@@ -280,12 +330,15 @@
     <!-- Contact -->
     <div id="contact">
         <div class="contact-wrapper">
-            <h1 class="title text-white">Let's Connect!</h1>
-            <a href="mailto:fernanda.marroquin07@gmail.com" id="social-media" class="fa fa-envelope" title="Send me an email"></a>
-            <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" id="social-media" class="fab fa-linkedin"
-                title="Let's connect on LinkedIn"></a>
-            <a href="https://github.com/fernandamarr" target="_blank" id="social-media" class="fab fa-github" title="Check out my GitHub"></a>
-            <a href="https://twitter.com/fernandaa_marr" target="_blank" id="social-media" class="fab fa-twitter" title="Follow me on Twitter"></a>
+            <h1 class="title text-white">Let's Connect!</h1><br>
+            <p class="fa fa-envelope"> : <span class="text-white"><strong>fernanda.marroquin07@gmail.com</strong></span>
+            </p><br>
+            <a href="https://www.linkedin.com/in/fernanda-marroquin-54792a16a/" target="_blank" id="social-media"
+                class="fab fa-linkedin" title="Let's connect on LinkedIn"></a>
+            <a href="https://github.com/fernandamarr" target="_blank" id="social-media" class="fab fa-github"
+                title="Check out my GitHub"></a>
+            <a href="https://twitter.com/fernandaa_marr" target="_blank" id="social-media" class="fab fa-twitter"
+                title="Follow me on Twitter"></a>
             <div id="arrow-up-container">
                 <div id="arrow-animate">
                     <a id="arrow" class="fas fa-angle-double-up" href="#home">
@@ -299,13 +352,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Popper.js, Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
 
     <!-- Script -->
     <script src="assets/javascript/portfolio.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
 
 </body>
 

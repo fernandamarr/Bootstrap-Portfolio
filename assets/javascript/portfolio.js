@@ -1,5 +1,10 @@
 $(document).ready(function () {
 
+    AOS.init({
+        duration: 1200,
+        once: true,
+    });
+
     // Transition effect for navbar 
     $(window).scroll(function () {
         // if window is scrolled more than 500px, add/remove solid class

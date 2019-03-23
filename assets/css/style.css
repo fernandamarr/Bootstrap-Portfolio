@@ -17,8 +17,32 @@ body {
     color: #ffffff;
 }
 
-#link:hover, #brand:hover {
+#brand:hover {
     color: #fa0060;
+}
+
+#link:hover {
+    color: #ffffff;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+#link::after {
+    content: '';
+    display: block;
+    border: none;
+    width: 0;
+    height: 3px;
+    margin-top: 5px;
+    background: #fa0060;
+    transition: width .3s;
+}
+
+#link:hover::after {
+    width: 100%;
+    border: none;
+    transition: width .3s;
 }
 
 /* Home */
@@ -26,8 +50,8 @@ body {
     color: #ffffff;
     padding-bottom: 200px;
     background: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.8)
       ),url(../images/home-bgd-compressed.jpg);
     background-size: cover;
     height: 100vh;
@@ -115,101 +139,232 @@ body {
 #about {
     padding-top: 80px;
     padding-bottom: 300px;
-    background-color: #FA8072;
+    background-color: #ffffff;
 }
 
 .title {
     margin-bottom: 25px;
 }
 
-.one-liner {
-    font-size: 44px;
-    font-family: 'Cookie', cursive;
-    color: #ffffff;
-}
-
 .short-bio {
     font-size: 18px;
-    color: #ffffff;
+    color: #000000;
 }
 
 #profile-picture {
     width: 100%;
     height: auto;
     max-width: 370px;
-    padding-top: 100px;
+    /* padding-top: 70px; */
     margin-left: 80px;
+    border-radius: 5%;
+}
+
+.card-deck {
+    margin: 90px 30px 100px 30px;
+}
+
+.fa-laptop-code, .fa-heart, .fa-users-cog {
+    margin-top: 15px;
+    font-size: 40px;
+    color: #fa0060;
+}
+
+#skills-list {
+    list-style: none;
+}
+
+.list {
+display: inline-block;
+}
+
+#skills-list li::before {
+    content: "  •"; 
+    color: #fa0060;
 }
 
 /* Portfolio */
 #portfolio {
     padding-top: 80px;
     padding-bottom: 300px;
+    background-color: #e7e3e3;
 }
 
-#portfolio-img {
-    width: 100%;
-    height: 100%;
-}
 
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    margin: 30px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px; /* 3D effect */
-  }
-  
-  /* Position the front and back side */
-.flip-card-inner {
+
+/* Portfolio */
+.grid {
     position: relative;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
     text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-/* Horizontal flip on hover */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+}
+
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 200px;
+    min-height: 180px;
+    max-width: 320px;
+    max-height: 300px;
+    width: 340px;
+    height: 300px;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.9;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+}
+
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 60%;
+}
+
+figure.effect {
+    background: #3085a3;
+}
+
+figure.effect img {
+    max-width: none;
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Style the back side */
-.flip-card-back {
-    background-color: #14A6C7;
-    color: #ffffff;
-    transform: rotateY(180deg);
-  }
-
-#portfolio-title {
-    margin-top: 30px;
-    font-size: 2.1rem;
 }
 
-#info {
-    font-size: 1.2rem;
-    color: #ffffff;
+figure.effect:hover img {
+    opacity: 0.1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+    text-align: left;
+}
+
+figure.effect h2 {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5em 0;
+}
+
+figure.effect h2::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%,0,0);
+    transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h2::after {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+figure.effect a {
+    padding: 1em 0;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover a {
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+#view {
     text-decoration: none;
+    color: white;
 }
 
-#info:hover {
+#view:hover {
     color: #fa0060;
+
 }
   
 /* Contact */
@@ -224,7 +379,7 @@ body {
 .contact-wrapper {
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     background-color: #000000;
 } 
 
@@ -242,6 +397,11 @@ body {
 #arrow:hover, #social-media:hover {
     text-decoration: none;
     color: #14A6C7;
+}
+
+.fa-envelope {
+    font-size: 20px;
+    color: #fa0060;
 }
 
 /* Contact Form arrow to take user top of page */
